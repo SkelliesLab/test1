@@ -222,11 +222,7 @@ export default function Home() {
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
           <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         </Head>
-        <img
-          src={collectionBackgroundUrl}
-          alt={'background'}
-          className={styles.bg_image}
-        />
+
         <div
           className={styles.bg_filter}
         ></div>
