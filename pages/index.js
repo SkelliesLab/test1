@@ -215,8 +215,8 @@ export default function Home() {
     <div className="bg-gray-500">
       <div className={styles.container}>
         <Head>
-          <title>Nevermores Mint</title>
-          <meta name="description" content="Nevermores Mint" />
+          <title>Skellies Lab</title>
+          <meta name="description" content="Skellies Lab" />
           <link rel="icon" href="/favicon.ico" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
@@ -237,43 +237,59 @@ export default function Home() {
           <div className={styles.topcorner}>
             <ConnectWalletButton connectButton={!wallet.connected} className="d-flex" />
           </div>
-          <img src={collectionCoverUrl} className={styles.mintimage} />
+
           <div id="collection-info" className="d-flex flex-column align-items-center text-white" style={{width: "80%"}}>
             {isFetchignCmData ? <Spinner animation="border" role="status" className="mt-5"><span className="visually-hidden">Loading...</span></Spinner> : 
             <>
-              <div className="d-flex align-items-center my-3">
-                <div className={styles.inputbtnsbox}>
-                <button onClick={incrementMintAmount} className={styles.inputbtns} style={{border: incActive ? '' : '1px solid grey'}}>▲</button>
-                <button onClick={decrementMintAmount} className={styles.inputbtns} style={{border: decActive ? '' : '1px solid grey' }}>▼</button>
-                </div>
-                <div id="mint-amount-input" className={`${styles.defaultInput} me-3`}>
-                  <p style={{marginTop: "15px"}} id="mintAmount">{mintInfo.numToMint}</p>
-                </div>
-                <button className={styles.button} onClick={mint} disabled={!canMint}>{mintInfo.minting ? <Spinner animation="border" role="status"><span className="visually-hidden">Loading...</span></Spinner> : "Mint"}</button>
-              </div>
-            </>}
-            <div className={styles.mintstats}>
-              <div className={styles.spacebetween}>
-                <h6>Minted NFTs:</h6>
-                <h6>{candyMachineData.data.numMintedTokens} / {COLLECTION_SIZE}</h6>
-              </div>
-              <div className={styles.spacebetween}>
-                <h6>Mint fee: </h6>
-                <h6 id="mintfee">{candyMachineData.data.mintFee * mintInfo.numToMint} $APT</h6>
-              </div>
-              <div className={styles.spacebetween}>
-                <h6>Max mints per wallet: </h6>
-                <h6>{MaxMint}</h6>
-              </div>
-              <div className={styles.spacebetween}>
-                <h6>Presale Mint:</h6>
-                <h6>{timeLeftToMint.presale === "LIVE" ? "LIVE" : timeLeftToMint.presale.days + " d : " + timeLeftToMint.presale.hours + " h : " + timeLeftToMint.presale.minutes + " m : " + timeLeftToMint.presale.seconds + " s"}</h6>
-              </div>
-              <div className={styles.spacebetween}>
-                <h6>Public Mint: </h6>
-                <h6>{timeLeftToMint.public === "LIVE" ? "LIVE" : timeLeftToMint.public.days + " d : " + timeLeftToMint.public.hours + " h : " + timeLeftToMint.public.minutes + " m : " + timeLeftToMint.public.seconds + " s"}</h6>
-              </div>
+            <div className = "my-5">              </div>
+            <div><h2 className = 'text-center text-danger text-capitalize my-5'>Aptos Skellies Launchpad</h2></div>
+            <p className = 'text-center text-white text-capitalize ' >The ultimate NFT launchpad exclusive only for Creator is one of the most comprehensive systems for artists to launch their NFT Collection.</p>
+            <p className = 'text-center text-white text-capitalize ' >Combined with Skellies Lab innovative technology, including its NFT Management System where NFT holders can earn yield by lending their NFTs to Skellies Lab Program.</p>
+
+            <button href="#" type="button" className="btn btn-primary" data-toggle="button" aria-pressed="true" autoComplete="off">
+  Coming Soon
+</button>
+            <div>
+              <h1 className = 'text-center text-danger text-capitalize my-5'>Features</h1>
+              <div className="container text-center ">
+                <div className="row">
+                  <div className="col-xl-4 col-lg-4">
+                    <div className="card" >
+  <img src="1.png" className="card-img-top" alt="" height="300px"/>
+  <div className="card-body container-sm ">
+    <h5 className="card-title text-danger">Free Mint</h5>
+    <p className="card-text text-black">Each NFT collection will be free mint for holders. Public mint will be paid. Because FP is temporary but Art is permanent.</p>
+    <a href="#" className="btn btn-primary">More Info</a>
+  </div>
+</div>
+                    </div>
+                    <div className="col-xl-4 col-lg-4">
+                      <div className="card container-sm" >
+  <img src="2.png" className="card-img-top" alt="" height="300px"/>
+  <div className="card-body ">
+    <h5 className="card-title text-danger">Monthly Launch</h5>
+    <p className="card-text text-black">NFT creators can launch thier NFTs at SkelliesLab Launchpad to reach out the web3 community globally  </p>
+    <a href="#" className="btn btn-primary">More Info</a>
+  </div>
+</div>
+                      </div>
+                      <div className="col-xl-4 col-lg-4">
+                        <div className="card container-sm" >
+  <img src="3.png" className="card-img-top" alt="" height="300px"/>
+  <div className="card-body">
+    <h5 className="card-title text-danger">Holder&apos;s Benefits</h5>
+    <p className="card-text text-black">Every holder of 1k Dead Scientist will be the top most priority of our next every collection.</p>
+    <a href="www.google.com" className="btn btn-primary">More Info</a>
+  </div>
+</div>
+                        </div>
+                        </div>
+                        </div>
+              
+              
             </div>
+
+            </>}
           <div className={styles.notification} style={{opacity: notificationActive ? '1' : ''}}>
             <h6 className={styles.notificationtext}>Please connect your wallet at the top right of the page</h6>
           </div>  
