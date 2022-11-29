@@ -1,6 +1,6 @@
 export const candyMachineAddress = "0xaae2fdba212b79cac0559a232064e22da1340c1435728bbca0d881a4d84d6361";
 
-export const collectionName = "Test101"; // Case sensitive!
+export const collectionName = "SkelliesLab"; // Case sensitive!
 export const MaxMint = 3
 export const COLLECTION_SIZE = 10 
 
