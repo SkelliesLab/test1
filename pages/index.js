@@ -249,7 +249,7 @@ export default function Home() {
               <h1 className = 'text-center text-danger text-capitalize my-5'>Features</h1>
               <div className="container text-center ">
                 <div className="row">
-                  <div className="col-xl-4 col-lg-4">
+                  <div className="col-xl-4 col-lg-4 my-5">
                     <div className="card" >
   <img src="1.png" className="card-img-top" alt="" height="300px"/>
   <div className="card-body container-sm ">
@@ -259,7 +259,7 @@ export default function Home() {
   </div>
 </div>
                     </div>
-                    <div className="col-xl-4 col-lg-4">
+                    <div className="col-xl-4 col-lg-4 my-5">
                       <div className="card container-sm" >
   <img src="2.png" className="card-img-top" alt="" height="300px"/>
   <div className="card-body ">
@@ -269,7 +269,7 @@ export default function Home() {
   </div>
 </div>
                       </div>
-                      <div className="col-xl-4 col-lg-4">
+                      <div className="col-xl-4 col-lg-4 my-5">
                         <div className="card container-sm" >
   <img src="3.png" className="card-img-top" alt="" height="300px"/>
   <div className="card-body">
