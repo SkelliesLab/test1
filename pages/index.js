@@ -74,7 +74,7 @@ export default function Home() {
       mintAmount.textContent = mintInfo.numToMint
     } 
     
-    else if (mintInfo.numToMint === MaxMint) {
+    else if (mintInfo.numToMint === MaxMint ) {
       setIncActive(current => !current);
       mintInfo.numToMint--; 
       mintfee.textContent = `${(candyMachineData.data.mintFee * mintInfo.numToMint).toFixed(2)} $APT`
