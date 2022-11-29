@@ -6,7 +6,7 @@ import { AptosClient } from "aptos";
 import { useWallet } from '@manahippo/aptos-wallet-adapter';
 import cmHelper from "../helpers/candyMachineHelper"
 import ConnectWalletButton from '../helpers/Aptos/ConnectWalletButton';
-import {candyMachineAddress, collectionName, collectionCoverUrl, collectionBackgroundUrl, MaxMint, NODE_URL, CONTRACT_ADDRESS, COLLECTION_SIZE, SERVICE_NAME} from "../helpers/candyMachineInfo"
+import {candyMachineAddress, collectionName, collectionCoverUrl, MaxMint, NODE_URL, CONTRACT_ADDRESS, COLLECTION_SIZE, SERVICE_NAME} from "../helpers/candyMachineInfo"
 
 import Spinner from "react-bootstrap/Spinner"
 import Modal from "react-bootstrap/Modal"
@@ -223,7 +223,7 @@ export default function Home() {
           <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         </Head>
         <img
-          src={collectionBackgroundUrl}
+          src="background.webp"
           alt={'background'}
           className={styles.bg_image}
         />
