@@ -1,7 +1,7 @@
 import styles from '../../styles/Home.module.css'
 
 import {useWallet} from "@manahippo/aptos-wallet-adapter"
-import aptosLogo from "../../public/aptosLogo.png"
+//import aptosLogo from "../../public/aptosLogo.png"
 
 import Modal from "react-bootstrap/Modal"
 
